@@ -86,7 +86,7 @@ pub enum Token {
     #[token("/=")]
     SlashAssign,
     #[token("%=")]
-    PercentAssing,
+    PercentAssign,
     #[token("<<=")]
     LeftShiftAssign,
     #[token(">>=")]
@@ -127,6 +127,12 @@ pub enum Token {
     LogicalOr,
     #[token("!")]
     LogicalNot,
+
+    #[token("<=")]
+    LessEqual,
+
+    #[token(">=")]
+    GreaterEqual,
 
     // bitwise
     #[token("&")]
